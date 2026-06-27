@@ -10,7 +10,9 @@ import pe.edu.cibertec.senamhi.repository.EstacionRepository;
 
 @RestController
 @RequestMapping("/api/estaciones")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+        "http://localhost:4200",
+        "https://tubular-bunny-c07551.netlify.app"})
 public class EstacionController {
 
     @Autowired

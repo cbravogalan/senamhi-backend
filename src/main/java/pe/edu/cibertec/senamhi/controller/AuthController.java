@@ -13,7 +13,8 @@ import pe.edu.cibertec.senamhi.repository.UsuarioRepository;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200",
+                        "https://tubular-bunny-c07551.netlify.app"})
 public class AuthController {
 
     @Autowired
